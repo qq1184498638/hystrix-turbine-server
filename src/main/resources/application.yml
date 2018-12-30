@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: hystrix-terbine-server
+server:
+  port: 8765
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: data-one-server
+  clusterNameExpression: new String("default")
+#  instanceUrlSuffix: /hystrix.stream
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@127.0.0.1:8761/eureka
+# 暴露监控端点
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
