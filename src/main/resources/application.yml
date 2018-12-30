@@ -8,7 +8,7 @@ turbine:
     clusterConfig: default
   appConfig: data-one-server
   clusterNameExpression: new String("default")
-#  instanceUrlSuffix: /hystrix.stream
+  instanceUrlSuffix: /hystrix.stream
 eureka:
   client:
     service-url:
